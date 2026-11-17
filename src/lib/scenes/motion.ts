@@ -58,6 +58,11 @@ export type MotionStyle =
    */
   | "paddle"
   /**
+   * Mythical: swims along the lake below the castle, surfacing as it goes,
+   * with long rests. Drawn from the waterline up, like `paddle`.
+   */
+  | "swim"
+  /**
    * Pumpkin Hollow: a giant's slow walk along the back of the patch, with
    * long stops to look about, so it towers over the pumpkins in front.
    */
@@ -145,6 +150,12 @@ const BOUGH_UNDERSIDE = { top: 0.546, bottom: 0.556 };
  * backdrop, as fractions of Scene height: where a swimmer's waterline runs.
  */
 const OPEN_WATER = { top: 0.54, bottom: 0.598 };
+
+/**
+ * The lake in the mythical backdrop, between the far shore and the meadow's
+ * sandy lip, as fractions of Scene height: where a swimmer's waterline runs.
+ */
+const LAKE = { top: 0.565, bottom: 0.612 };
 
 /**
  * The back of the pumpkin patch in the Pumpkin Hollow backdrop, as fractions
@@ -439,6 +450,21 @@ export const MOTION_PROFILES: Record<MotionStyle, MotionProfile> = {
     // walker keeps to the ground.
     ground: true,
     band: OPEN_WATER,
+  },
+  swim: {
+    region: { xMin: 0.04, xMax: 0.96, yMin: 0, yMax: 1 },
+    speed: 0.016,
+    agility: 1.2,
+    reachX: 0.5,
+    reachY: 0,
+    restChance: 0.5,
+    rest: [3, 8],
+    pulse: 0,
+    flips: true,
+    tilts: false,
+    // On the lake rather than under it, keeping to its waterline.
+    ground: true,
+    band: LAKE,
   },
   stride: {
     region: { xMin: 0.04, xMax: 0.96, yMin: 0, yMax: 1 },
