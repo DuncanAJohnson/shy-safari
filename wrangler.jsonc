@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "shy-safari",
+  "compatibility_date": "2026-11-01",
+  // Static assets only: no Worker script runs, so requests are free and unlimited.
+  // /about is served from about.html (the default html_handling), and
+  // static/_redirects and static/_headers carry the rest of the old vercel.json.
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "404-page",
+  },
+}

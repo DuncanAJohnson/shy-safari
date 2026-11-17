@@ -15,3 +15,6 @@ dist
 .DS_Store
 .scratch/
 build
+
+# Wrangler local state
+.wrangler

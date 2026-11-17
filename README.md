@@ -75,10 +75,17 @@ bun run check    # typecheck
 bun test         # unit tests
 bun run lint     # prettier + eslint
 bun run build    # static production build into build/
+bun run build && bunx wrangler dev   # the built site, served the way Cloudflare serves it
 ```
 
+The site is hosted on Cloudflare Workers as static assets (`wrangler.jsonc`), with
+`static/_redirects` and `static/_headers` for redirects and caching.
+`www.shysafari.com` is the canonical origin and `shysafari.com` redirects to it;
+keep it that way, because every class's settings and notes live in that origin's
+localStorage.
+
 Cloudflare Web Analytics is added to the build only when `CF_BEACON_TOKEN` is
-set, which it is only in Vercel's production environment.
+set, which it is only as a build variable on the production Cloudflare build.
 
 ## How it is put together
 

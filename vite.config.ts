@@ -7,8 +7,8 @@ export default defineConfig({
   server: {
     allowedHosts: ["class-noise-level.edtechathon.com"],
   },
-  // Expose the Cloudflare Web Analytics token (set only in Vercel's
-  // production environment) to client code.
+  // Expose the Cloudflare Web Analytics token (set only as a build variable on
+  // the production Cloudflare build) to client code.
   envPrefix: ["VITE_", "CF_BEACON_TOKEN"],
   plugins: [
     tailwindcss(),
