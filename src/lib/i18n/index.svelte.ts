@@ -474,16 +474,19 @@ const en = {
     "jack-o-lantern": "Jack O. Lantern",
     // The mythical Creatures.
     fairy: "Fairy",
+    "will-o-the-wisp": "Will-o'-the-wisp",
     "moon-rabbit": "Moon rabbit",
+    duende: "Duende",
     carbunclo: "Carbunclo",
-    "fire-salamander": "Fire salamander",
-    kitsune: "Kitsune",
-    boto: "Boto",
-    "baby-dragon": "Baby dragon",
+    alebrije: "Alebrije",
     mermaid: "Mermaid",
+    haechi: "Haechi",
     griffin: "Griffin",
+    troll: "Troll",
     unicorn: "Unicorn",
     qilin: "Qilin",
+    ogopogo: "Ogopogo",
+    kitsune: "Kitsune",
     phoenix: "Phoenix",
     dragon: "Dragon",
     bakunawa: "Bakunawa",
@@ -588,33 +591,6 @@ const en = {
       "People have been shouting “Boo!” to make each other jump since at least the 1700s.",
     "jack-o-lantern":
       "The first jack-o’-lanterns were carved from turnips in Ireland; in America, pumpkins took over.",
-    // The mythical Creatures.
-    fairy:
-      "Stories of fairies come from all over Europe. In Ireland they were said to live inside grassy hills.",
-    "moon-rabbit":
-      "In China, Japan and Korea, people see a rabbit in the dark patches of the full Moon, not a face.",
-    carbunclo:
-      "In Chilean folklore it carries a glowing jewel, and whoever catches it would become rich.",
-    "fire-salamander":
-      "People once believed salamanders could live in fire, maybe because real ones crawled out of logs thrown on the fire.",
-    kitsune:
-      "In Japanese tales, a fox spirit grows a new tail every hundred years, up to nine.",
-    boto: "In Amazon legends the pink river dolphin can turn into a person. Real botos really are pink.",
-    "baby-dragon":
-      "In many legends, dragons hatch from eggs and take hundreds of years to grow up.",
-    mermaid:
-      "Sailors' stories of mermaids may have come from glimpsing manatees and dugongs from far away.",
-    griffin:
-      "Half eagle, half lion. Some historians think the legend began with dinosaur fossils found in Central Asia.",
-    unicorn: "The unicorn is Scotland's national animal.",
-    qilin:
-      "In Chinese legend, a qilin appears when a wise and kind ruler is born.",
-    phoenix:
-      "A phoenix lives for hundreds of years, then bursts into flames and is born again from its ashes.",
-    dragon:
-      "Chinese dragons bring rain and good luck, while dragons in European stories often breathe fire.",
-    bakunawa:
-      "A giant sea serpent from the Philippines, said to swallow the Moon in an eclipse until people bang pots to make it spit it out.",
   },
 } as const;
 
@@ -1179,16 +1155,19 @@ const es = {
     "jack-o-lantern": "Jack O. Lantern",
     // The mythical Creatures.
     fairy: "Hada",
+    "will-o-the-wisp": "Fuego fatuo",
     "moon-rabbit": "Conejo de la luna",
+    duende: "Duende",
     carbunclo: "Carbunclo",
-    "fire-salamander": "Salamandra de fuego",
-    kitsune: "Kitsune",
-    boto: "Boto",
-    "baby-dragon": "Dragoncito",
+    alebrije: "Alebrije",
     mermaid: "Sirena",
+    haechi: "Haechi",
     griffin: "Grifo",
+    troll: "Trol",
     unicorn: "Unicornio",
     qilin: "Qilin",
+    ogopogo: "Ogopogo",
+    kitsune: "Kitsune",
     phoenix: "Fénix",
     dragon: "Dragón",
     bakunawa: "Bakunawa",
@@ -1291,33 +1270,6 @@ const es = {
       "La gente lleva gritando «¡Bu!» para asustarse desde por lo menos el siglo XVIII.",
     "jack-o-lantern":
       "Las primeras linternas de Halloween se tallaban en nabos en Irlanda; en América las sustituyeron las calabazas.",
-    // The mythical Creatures.
-    fairy:
-      "Hay cuentos de hadas por toda Europa. En Irlanda se decía que vivían dentro de colinas cubiertas de hierba.",
-    "moon-rabbit":
-      "En China, Japón y Corea, la gente ve un conejo en las manchas oscuras de la luna llena, no una cara.",
-    carbunclo:
-      "En el folclore chileno lleva una joya que brilla, y quien lo atrape se haría rico.",
-    "fire-salamander":
-      "Antes se creía que las salamandras podían vivir en el fuego, quizá porque las de verdad salían de los troncos echados a la hoguera.",
-    kitsune:
-      "En los cuentos japoneses, un zorro espíritu gana una cola nueva cada cien años, hasta tener nueve.",
-    boto: "En las leyendas del Amazonas, el delfín rosado de río puede convertirse en persona. Los botos de verdad son rosados.",
-    "baby-dragon":
-      "En muchas leyendas, los dragones salen de huevos y tardan cientos de años en crecer.",
-    mermaid:
-      "Las historias de sirenas de los marineros quizá vengan de ver manatíes y dugongos de lejos.",
-    griffin:
-      "Mitad águila, mitad león. Algunos historiadores creen que la leyenda nació de fósiles de dinosaurios hallados en Asia Central.",
-    unicorn: "El unicornio es el animal nacional de Escocia.",
-    qilin:
-      "En la leyenda china, un qilin aparece cuando nace un gobernante sabio y bondadoso.",
-    phoenix:
-      "Un fénix vive cientos de años, luego estalla en llamas y vuelve a nacer de sus cenizas.",
-    dragon:
-      "Los dragones chinos traen lluvia y buena suerte, mientras que los de los cuentos europeos suelen escupir fuego.",
-    bakunawa:
-      "Una serpiente marina gigante de Filipinas que, según se dice, se traga la Luna en los eclipses hasta que la gente golpea ollas para que la escupa.",
   },
 } satisfies Language;
 
@@ -1823,16 +1775,19 @@ const fr = {
     "jack-o-lantern": "Jack O. Lantern",
     // The mythical Creatures.
     fairy: "Fée",
+    "will-o-the-wisp": "Feu follet",
     "moon-rabbit": "Lapin de la lune",
+    duende: "Duende",
     carbunclo: "Carbunclo",
-    "fire-salamander": "Salamandre de feu",
-    kitsune: "Kitsune",
-    boto: "Boto",
-    "baby-dragon": "Bébé dragon",
+    alebrije: "Alebrije",
     mermaid: "Sirène",
+    haechi: "Haechi",
     griffin: "Griffon",
+    troll: "Troll",
     unicorn: "Licorne",
     qilin: "Qilin",
+    ogopogo: "Ogopogo",
+    kitsune: "Kitsune",
     phoenix: "Phénix",
     dragon: "Dragon",
     bakunawa: "Bakunawa",
@@ -1937,33 +1892,6 @@ const fr = {
       "On crie « Bouh ! » pour se faire sursauter depuis au moins le XVIIIe siècle.",
     "jack-o-lantern":
       "Les premières lanternes d’Halloween étaient taillées dans des navets en Irlande ; en Amérique, la citrouille les a remplacés.",
-    // The mythical Creatures.
-    fairy:
-      "On raconte des histoires de fées partout en Europe. En Irlande, on disait qu'elles vivaient dans des collines couvertes d'herbe.",
-    "moon-rabbit":
-      "En Chine, au Japon et en Corée, on voit un lapin dans les taches sombres de la pleine lune, pas un visage.",
-    carbunclo:
-      "Dans le folklore chilien, il porte un joyau lumineux, et celui qui l'attrape deviendrait riche.",
-    "fire-salamander":
-      "On a longtemps cru que les salamandres pouvaient vivre dans le feu, peut-être parce que les vraies sortaient des bûches jetées au feu.",
-    kitsune:
-      "Dans les contes japonais, un renard esprit gagne une nouvelle queue tous les cent ans, jusqu'à neuf.",
-    boto: "Dans les légendes d'Amazonie, le dauphin rose de rivière peut se changer en humain. Les vrais botos sont vraiment roses.",
-    "baby-dragon":
-      "Dans beaucoup de légendes, les dragons naissent d'un œuf et mettent des centaines d'années à grandir.",
-    mermaid:
-      "Les histoires de sirènes des marins viennent peut-être de lamantins et de dugongs aperçus de loin.",
-    griffin:
-      "Moitié aigle, moitié lion. Certains historiens pensent que la légende est née de fossiles de dinosaures trouvés en Asie centrale.",
-    unicorn: "La licorne est l'animal national de l'Écosse.",
-    qilin:
-      "Dans la légende chinoise, un qilin apparaît quand naît un dirigeant sage et bon.",
-    phoenix:
-      "Un phénix vit des centaines d'années, puis s'embrase et renaît de ses cendres.",
-    dragon:
-      "Les dragons chinois apportent la pluie et la chance, alors que ceux des contes européens crachent souvent du feu.",
-    bakunawa:
-      "Un serpent de mer géant des Philippines, qui avalerait la Lune pendant les éclipses jusqu'à ce que les gens tapent sur des casseroles pour qu'il la recrache.",
   },
 } satisfies Language;
 
