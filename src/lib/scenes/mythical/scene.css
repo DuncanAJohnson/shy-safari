@@ -75,6 +75,77 @@
   animation: mythical-twinkle ease-in-out infinite;
 }
 
+/* --- Creatures ------------------------------------------------------------ */
+
+/* The lake's swimmers are drawn whole, but the bottom of their viewBox is the
+   waterline: everything below it is under the water, so it is never shown.
+   Creature SVGs overflow their box (routes/layout.css) so swaying parts aren't
+   cut off; here only the bottom edge clips, the other three stay open. */
+.creature[data-motion="swim"] > svg {
+  clip-path: inset(-100% -100% 0 -100%);
+}
+
+/* The kitsune's nine tails wave one after another, each about its own root,
+   rather than swinging together as one fan. */
+@keyframes mythical-tail-wave {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+.creature .mythical-tail {
+  animation: mythical-tail-wave 2.4s ease-in-out infinite;
+}
+
+.creature .mythical-tail:nth-child(2) {
+  animation-delay: -0.25s;
+}
+.creature .mythical-tail:nth-child(3) {
+  animation-delay: -0.5s;
+}
+.creature .mythical-tail:nth-child(4) {
+  animation-delay: -0.75s;
+}
+.creature .mythical-tail:nth-child(5) {
+  animation-delay: -1s;
+}
+.creature .mythical-tail:nth-child(6) {
+  animation-delay: -1.25s;
+}
+.creature .mythical-tail:nth-child(7) {
+  animation-delay: -1.5s;
+}
+.creature .mythical-tail:nth-child(8) {
+  animation-delay: -1.75s;
+}
+.creature .mythical-tail:nth-child(9) {
+  animation-delay: -2s;
+}
+
+/* The will-o'-the-wisp rocks as one flame, side to side about its base. */
+@keyframes mythical-rock {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+.creature .mythical-rock {
+  animation: mythical-rock 2.6s ease-in-out infinite;
+}
+
+/* Calmer while it listens, like every other tail (routes/layout.css). */
+.swimmer[data-listening="true"] .mythical-tail {
+  animation-duration: 4.8s;
+}
+
 /* --- The page and Too Loud ---------------------------------------------- */
 
 html:has(.scene-stage[data-scene="mythical"]),
@@ -127,7 +198,9 @@ html[data-scene="mythical"]:not(:has(.scene-stage)) body {
 @media (prefers-reduced-motion: reduce) {
   .mythical-falls,
   .mythical-glint,
-  .mythical-sparkle {
+  .mythical-sparkle,
+  .creature .mythical-tail,
+  .creature .mythical-rock {
     animation: none;
   }
 

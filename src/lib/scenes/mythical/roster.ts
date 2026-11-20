@@ -2,11 +2,12 @@
  * The mythical Roster: every Creature that can appear in this Scene.
  *
  * Creatures from the world's myths and folk tales, gathered in one enchanted
- * valley: the fairy, unicorn, troll and will-o'-the-wisp of European tales,
- * the nine-tailed kitsune of Japan, the moon rabbit of East Asia, the qilin of
- * China, the haechi of Korea, the bakunawa and duende of the Philippines, the
- * alebrije of Mexico, the carbunclo of Chile's mines and Ogopogo of Canada's
- * Okanagan Lake. Most of the newer ones were picked by followers asked which
+ * valley: the fairy, unicorn and will-o'-the-wisp of European tales, the
+ * winged Pegasus of Greece, the yeti of the Himalayas, the nine-tailed
+ * kitsune of Japan, the moon rabbit of East Asia, the qilin of China, the
+ * bakunawa and duende of the Philippines, the alebrije of Mexico, the
+ * carbunclo of Chile's mines and Ogopogo of Canada's Okanagan Lake. Most of
+ * the newer ones were picked by followers asked which
  * Creatures from outside Western Europe the Scene should have.
  *
  * It has the savanna's shape of 6 Common, 8 Uncommon and 3 Rare.
@@ -28,28 +29,28 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
   {
     slug: "will-o-the-wisp",
     tier: "common",
-    width: 30,
+    width: 60,
     motion: "hover",
-    parts: ["part-tail", "part-pulse"],
+    parts: ["part-pulse"],
   },
   {
     slug: "fairy",
     tier: "common",
-    width: 36,
+    width: 84,
     motion: "hover",
     parts: ["part-wings"],
   },
   {
     slug: "moon-rabbit",
     tier: "common",
-    width: 44,
-    motion: "hop",
-    parts: ["part-ears", "part-arms"],
+    width: 75,
+    motion: "doze",
+    parts: ["part-ears"],
   },
   {
     slug: "duende",
     tier: "common",
-    width: 46,
+    width: 40,
     motion: "hop",
     parts: ["part-arms"],
   },
@@ -63,7 +64,7 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
   {
     slug: "alebrije",
     tier: "common",
-    width: 75,
+    width: 100,
     motion: "trot",
     parts: ["part-tail", "part-wings"],
   },
@@ -72,16 +73,16 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
   {
     slug: "mermaid",
     tier: "uncommon",
-    width: 110,
+    width: 70,
     motion: "swim",
     parts: ["part-tail", "part-arms"],
   },
   {
-    slug: "haechi",
+    slug: "yeti",
     tier: "uncommon",
-    width: 120,
-    motion: "trot",
-    parts: ["part-tail", "part-head"],
+    width: 84,
+    motion: "graze",
+    parts: ["part-arms", "part-head"],
   },
   {
     slug: "griffin",
@@ -91,18 +92,18 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
     parts: ["part-wings", "part-tail"],
   },
   {
-    slug: "troll",
+    slug: "pegasus",
     tier: "uncommon",
-    width: 150,
-    motion: "graze",
-    parts: ["part-tail", "part-arms"],
+    width: 170,
+    motion: "soar",
+    parts: ["part-wings", "part-tail"],
   },
   {
     slug: "kitsune",
     tier: "uncommon",
     width: 160,
     motion: "trot",
-    parts: ["part-ears", "part-tail"],
+    parts: ["part-ears"],
   },
   {
     slug: "unicorn",
@@ -121,7 +122,7 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
   {
     slug: "ogopogo",
     tier: "uncommon",
-    width: 230,
+    width: 242,
     motion: "swim",
     parts: ["part-body", "part-head"],
   },
@@ -144,7 +145,7 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
   {
     slug: "bakunawa",
     tier: "rare",
-    width: 340,
+    width: 356,
     motion: "swim",
     parts: ["part-body", "part-head"],
   },

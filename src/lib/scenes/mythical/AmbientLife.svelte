@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { AMBIENT_ART } from "$lib/scenes/mythical/artwork";
+
   /**
    * Scenery that is alive but is not a Creature: the waterfall pouring down
    * the gorge into the lake, light glinting on the water, and specks of
@@ -8,8 +10,11 @@
    * Everything here is deliberately subordinate: small, soft and slow, with
    * nothing shaped like a Creature, since it runs on a projector all day.
    * The valley itself is painted in `ambient/backdrop.svg`; this only places
-   * what moves over it. Positions are fixed rather than random, so the Scene
-   * looks the same each time a teacher opens it.
+   * what moves over it, plus the two trees framing it, which stand in front
+   * of every Creature (z-index above `groundLayer`'s 1000, below Too Loud's
+   * veil at 2000) so anything wandering to the edge goes behind them.
+   * Positions are fixed rather than random, so the Scene looks the same each
+   * time a teacher opens it.
    */
 
   /** Glints on the lake, over the pale ripples painted in the backdrop. */
@@ -61,3 +66,12 @@
     style="left:calc(var(--world-left) + {sparkle.x} * var(--wu)); top:{sparkle.top}%; width:calc({sparkle.size} * var(--wu)); animation-duration:{sparkle.duration}s; animation-delay:{sparkle.delay}s;"
   ></div>
 {/each}
+
+<!-- The framing trees, in front of every Creature. Same frame as the backdrop. -->
+<div
+  class="backdrop pointer-events-none absolute inset-y-0"
+  style="z-index:1001;"
+>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html AMBIENT_ART.trees}
+</div>

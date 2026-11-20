@@ -63,6 +63,11 @@ export type MotionStyle =
    */
   | "swim"
   /**
+   * Mythical: dozes high up in the sky, like a moon, drifting very slowly
+   * with long rests.
+   */
+  | "doze"
+  /**
    * Pumpkin Hollow: a giant's slow walk along the back of the patch, with
    * long stops to look about, so it towers over the pumpkins in front.
    */
@@ -465,6 +470,19 @@ export const MOTION_PROFILES: Record<MotionStyle, MotionProfile> = {
     // On the lake rather than under it, keeping to its waterline.
     ground: true,
     band: LAKE,
+  },
+  doze: {
+    region: { xMin: 0.06, xMax: 0.94, yMin: 0.04, yMax: 0.28 },
+    speed: 0.006,
+    agility: 0.5,
+    reachX: 0.2,
+    reachY: 0.1,
+    restChance: 0.75,
+    rest: [5, 12],
+    pulse: 0,
+    flips: true,
+    tilts: false,
+    ground: false,
   },
   stride: {
     region: { xMin: 0.04, xMax: 0.96, yMin: 0, yMax: 1 },
