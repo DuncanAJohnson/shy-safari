@@ -19,7 +19,9 @@
  * The Scene has three levels (`scenes/motion.ts`): the meadow, where the
  * walkers stand with their feet on the bottom edge of their viewBox as on the
  * savanna, the lake behind it, where the swimmers are drawn from the waterline
- * up (`swim`), and the sky, for the fliers.
+ * up (`swim`), and the sky, for the fliers. The fliers keep to the open air
+ * between the two framing trees (`flutter`, `wheel`, `doze`), since those are
+ * drawn in front of everything.
  */
 
 import type { CreatureDef } from "$lib/scenes/types";
@@ -30,20 +32,20 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
     slug: "will-o-the-wisp",
     tier: "common",
     width: 60,
-    motion: "hover",
+    motion: "flutter",
     parts: ["part-pulse"],
   },
   {
     slug: "fairy",
     tier: "common",
-    width: 84,
-    motion: "hover",
+    width: 116,
+    motion: "flutter",
     parts: ["part-wings"],
   },
   {
     slug: "moon-rabbit",
     tier: "common",
-    width: 75,
+    width: 110,
     motion: "doze",
     parts: ["part-ears"],
   },
@@ -88,14 +90,14 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
     slug: "griffin",
     tier: "uncommon",
     width: 150,
-    motion: "soar",
+    motion: "wheel",
     parts: ["part-wings", "part-tail"],
   },
   {
     slug: "pegasus",
     tier: "uncommon",
     width: 170,
-    motion: "soar",
+    motion: "wheel",
     parts: ["part-wings", "part-tail"],
   },
   {
@@ -132,14 +134,14 @@ export const MYTHICAL_ROSTER: CreatureDef[] = [
     slug: "phoenix",
     tier: "rare",
     width: 150,
-    motion: "soar",
+    motion: "wheel",
     parts: ["part-wings", "part-tail", "part-pulse"],
   },
   {
     slug: "dragon",
     tier: "rare",
     width: 260,
-    motion: "soar",
+    motion: "wheel",
     parts: ["part-wings", "part-tail"],
   },
   {
